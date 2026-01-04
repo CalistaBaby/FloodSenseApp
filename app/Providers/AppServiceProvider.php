@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Providers;
+
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
+    {
+        View::addNamespace(
+            'Masyarakat',
+            app_path('Modules/Masyarakat/Views')
+        );
+
+        View::addNamespace(
+            'Admin',
+            app_path('Modules/Admin/Views')
+        );
+    }
+}
