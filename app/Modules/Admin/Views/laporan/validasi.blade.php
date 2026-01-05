@@ -41,19 +41,28 @@
                             </svg>
                         </button>
 
-                        @if(!$l->status_validasi) <form method="POST" action="/admin/laporan/{{ $l->id }}">
-                                @csrf @method('PATCH')
+                        @if($l->status_validasi == 'pending') 
+                            <form method="POST" action="{{ route('admin.laporan.updateStatus', $l->id) }}">
+                                @csrf 
+                                @method('PATCH')
                                 <input type="hidden" name="status" value="diterima">
-                                <button class="bg-green-100 text-green-700 px-3 py-1 rounded-lg text-xs font-bold hover:bg-green-500 hover:text-white transition">Terima</button>
+                                <button type="submit" class="bg-green-100 text-green-700 px-3 py-1 rounded-lg text-xs font-bold hover:bg-green-500 hover:text-white transition">
+                                    Terima
+                                </button>
                             </form>
 
-                            <form method="POST" action="/admin/laporan/{{ $l->id }}">
-                                @csrf @method('PATCH')
+                            <form method="POST" action="{{ route('admin.laporan.updateStatus', $l->id) }}">
+                                @csrf 
+                                @method('PATCH')
                                 <input type="hidden" name="status" value="ditolak">
-                                <button class="bg-red-100 text-red-700 px-3 py-1 rounded-lg text-xs font-bold hover:bg-red-500 hover:text-white transition">Tolak</button>
+                                <button type="submit" class="bg-red-100 text-red-700 px-3 py-1 rounded-lg text-xs font-bold hover:bg-red-500 hover:text-white transition">
+                                    Tolak
+                                </button>
                             </form>
                         @else
-                            <span class="text-gray-300 text-[10px] italic">Sudah divalidasi</span>
+                            <span class="text-gray-400 text-[10px] font-medium italic bg-gray-100 px-2 py-1 rounded">
+                                Selesai divalidasi
+                            </span>
                         @endif
                     </div>
                 </td>

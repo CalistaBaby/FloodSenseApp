@@ -12,7 +12,7 @@
             </div>
             <div>
                 <h2 class="text-2xl font-bold text-gray-800">Kelola Laporan Resmi Banjir</h2>
-                <p class="text-sm text-gray-500">Publikasikan informasi valid untuk konsumsi masyarakat.</p>
+                <p class="text-sm text-gray-500">Publikasikan informasi valid banjir untuk konsumsi masyarakat.</p>
             </div>
         </div>
 
