@@ -6,7 +6,7 @@
 
         <div class="relative w-full max-w-md bg-white rounded-2xl mx-4 shadow-[0_0_50px_rgba(59,130,246,0.5)] border border-blue-200 flex flex-col max-h-[90vh]">
             
-            <div class="p-8 pb-0 text-center">
+            <div class="p-8 mb pb-0 text-center">
                 <img
                     src="{{ asset('images/logo1.png') }}"
                     alt="FloodSense Logo"
