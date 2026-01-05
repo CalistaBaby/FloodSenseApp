@@ -54,7 +54,7 @@
                         <span class="text-blue-600">Secara Real-Time.</span>
                     </h1>
                     <p class="text-base text-slate-600 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 font-medium">
-                        FloodSense membantu warga Bandung mendapatkan informasi ketinggian air dan laporan titik banjir lebih cepat melalui integrasi IoT dan komunitas.
+                        FloodSense membantu warga Bandung mendapatkan informasi banjir lebih cepat dan terpercaya.
                     </p>
                     <div class="flex flex-wrap justify-center lg:justify-start gap-4">
                         <a href="#features" class="bg-blue-600 text-white px-7 py-3 rounded-xl text-sm font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
@@ -68,11 +68,14 @@
 
                 <div class="relative flex justify-center lg:justify-end">
                     <div class="bg-blue-50/50 rounded-[2.5rem] p-6 lg:p-10 aspect-video flex items-center justify-center border border-blue-100 shadow-xl relative overflow-hidden w-full max-w-xl">
-                        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+                        
+                        <img src="{{ asset('images/banjirfoto2.jpg') }}" alt="Flood Background" class="absolute inset-0 w-full h-full object-cover opacity-70 ">
+                        <div class="absolute inset-0 bg-blue-600 opacity-30 "></div>
+                        
                         
                         <div class="bg-white rounded-2xl shadow-xl p-6 z-10 w-full max-w-xs transform hover:scale-105 transition-transform duration-500">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 bg-red-100 text-red-600 rounded-xl flex items-center justify-center  text-sm">
+                                <div class="w-10 h-10 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-sm">
                                     <i class="fas fa-triangle-exclamation"></i>
                                 </div>
                                 <div>
@@ -88,8 +91,6 @@
                                 <span class="flex items-center gap-1"><i class="fas fa-location-dot"></i> Bandung</span>
                             </div>
                         </div>
-
-                        <i class="fas fa-mobile-screen text-[10rem] text-blue-100/50 absolute -right-10 -bottom-10 rotate-12 z-0"></i>
                     </div>
                 </div>
             </div>
