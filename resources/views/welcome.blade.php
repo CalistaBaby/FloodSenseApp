@@ -95,11 +95,11 @@
             </div>
         </header>
 
-        <section id="features" class="py-24 bg-slate-50">
+        <section id="features" class="py-24 bg-blue-50">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-blue-600 font-bold tracking-[0.15em] uppercase text-[11px] mb-3 text-center">Keunggulan Utama</h2>
-                    <p class="text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight">Mengapa FloodSense?</p>
+                    <p class="text-2xl lg:text-3xl font-extrabold text-black">Mengapa FloodSense?</p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
